@@ -1,31 +1,58 @@
-<h1>Ce sa imi fac de mancare?</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<p>In primul rand, niciodata nu am stiut si nici nu cred ca o sa aflu. 
-Este foarte vast acest domeniu al gatitului, ideile venind in mare parte cand iti este extraordinar de foame.</p>
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS - Assignment 1</title>
+    <style>
+        a[href^="https://www.google.com"] {
+            color: green;
+        }
 
-<p>New Paragraph!</p>
-<p>Creating second paragraph!</p>
+        a[target] {
+            color: red;
+        }
 
-<p>Intr-o relatie acest subiect al gatitului poate deveni si motiv de cearta din urmatoarele motive:</p>
-<ol>
-<li>eu m-am gandit si data trecuta</li>
-<li>nu am chef de gatit de aia</li>
-<li>nu mai mancam</li>
-<li>de aia nu am chef</li>
-<li>aia nu imi place</li>
-</ol>
+        #second-div p:nth-child(even) {
+            color: red
+        }
 
-<p>In acest gen de situatii de poate lua decizia de a comanda cu urmatoarele dezavantaje:</p>
-<ul>
-<li>ce comandam?</li>
-<li>de unde?</li>
-<li>nu vreau de la aia</li>
-<li>aia nu fac aia buna</li>
-<li>ajunge tarziu manarea</li>
-</ul>
+        #second-div p:nth-child(odd) {
+            color: blue
+        }
 
-<p style="color:red;">Situatiile detaliate mai sus duc la o slabire brusca fara a face niciun efort, totodata, si anemie.</p>
+        #first-div>p:after {
+            content: " - NEW";
+            color: yellow;
+        }
 
-<p style="color:purple;">Situatiile de mai sus ne fac sa ne spunem ca, poate mai bine bem o bere ca are ceva nutrienti si cand ti se face iar foame, mergi sa dormi.</p>
+        p:nth-child(8):hover {
+            font-style: italic;
+        }
+    </style>
+</head>
 
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <div id="second-div">
+            <h3>Sub subheading</h3>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
+        </div>
+    </div>
+    <p>Paragraph 9</p>
+    <p>Paragraph 10</p>
+</body>
 
+</html>
