@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+
+    <style>
+        .box {
+            width: 600px;
+            height: 492px;
+            margin: 0 auto;
+            position: absolute;
+            background-color: #050210;
+        }
+
+        .circle {
+            width: 350px;
+            height: 350px;
+            margin: 0 auto;
+            position: relative;
+            margin-top: 71px;
+
+            border: 2px;
+            border-radius: 100%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            box-shadow: 0 0 200px;
+            filter: drop-shadow(10px 10px 10px grey);
+            animation: my-animation 1.5s 0s 10 linear none running;
+            
+        }
+
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            position: relative;
+
+            border: 2px;
+            border-radius: 100%;
+            background: black;
+            transform: translateY(-325px);
+            box-shadow: inset 0 0 50px grey;
+
+            animation: my-animation-1 1.5s 0s 10 reverse ease-out none running;
+
+        }
+
+        @keyframes my-animation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes my-animation-1 {
+            0% {
+                box-shadow: inset 0 0 100px rgb(0, 0, 0);
+
+            }
+
+            100% {
+                box-shadow: inset 0 0 100px rgb(83, 83, 83);
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="circle"></div>
+        <div class="circle-1"></div>
+    </div>
+
+
+</body>
+
+</html>
